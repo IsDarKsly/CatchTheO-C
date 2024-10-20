@@ -159,6 +159,10 @@ int playGame(int bsize){
 		{
 			plyrY = (plyrY == (bsize - 1)) ? (bsize - 1) : plyrY + 1;
 		}
+		else // In this scenario the user has not inputed a correct character
+		{
+			steps--;
+		}
 		steps++;
 	}
 	CLEAR;
